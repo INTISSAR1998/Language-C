@@ -7,18 +7,18 @@ do{
     scanf("%d",&n);}
 while ((n<=0)||(n>50));
 
-printf("donner la case n°0");
+printf("donner la case nÂ°0");
 scanf("%d",&tab[0]);
 
 for(i=0;i<n;i++){
     do{printf ("donner tab[%d]",i);
     scanf("%d",&tab[i]);}
 while (tab[i]<tab[i-1]);}
-printf("donner l'élement a insérer");
+printf("donner l'Ã©lement a insÃ©rer");
 scanf("%d",&x);
 c=0;
 while(tab[c]<x)
-{c++;}//c:indice de la case à remplir x
+{c++;}//c:indice de la case Ã  remplir x
 n++;
 for(i=n;i>c;i--){tab[i]=tab[i-1];}
 tab[c]=x;
